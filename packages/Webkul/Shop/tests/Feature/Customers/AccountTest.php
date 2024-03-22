@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -64,6 +65,9 @@ it('should update the customer', function () {
         'status'            => 1,
         'customer_group_id' => 2,
         'phone'             => $phone = fake()->e164PhoneNumber(),
+        'image'             => [
+            UploadedFile::fake()->image('profile.jpg'),
+        ],
     ])
         ->assertRedirect(route('shop.customers.account.profile.index'));
 
