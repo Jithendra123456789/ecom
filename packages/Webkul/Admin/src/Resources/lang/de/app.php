@@ -3203,17 +3203,6 @@ return [
                 'info'  => 'Katalog',
                 'title' => 'Katalog',
 
-                'inventory' => [
-                    'info'  => 'Rückbestellungen einrichten',
-                    'title' => 'Inventar',
-
-                    'stock-options' => [
-                        'allow-back-orders'  => 'Rückbestellungen erlauben',
-                        'title'              => 'Bestandsoptionen',
-                        'title-info'         => 'Bestandsoptionen sind Anlageverträge, die das Recht gewähren, Unternehmensaktien zu einem festgelegten Preis zu kaufen oder zu verkaufen und potenzielle Gewinne beeinflussen.',
-                    ],
-                ],
-
                 'products' => [
                     'info'  => 'Gastkasse einrichten, Produktansichtsseite, Warenkorbansichtsseite, Ladenfront, Bewertung und Attribut-Social-Share festlegen.',
                     'title' => 'Produkte',
@@ -3523,7 +3512,7 @@ return [
                 ],
 
                 'order-settings' => [
-                    'info'  => 'Bestellnummer und Mindestbestellung festlegen.',
+                    'info'  => 'Bestellnummern, Mindestbestellungen und Rückbestellungen festlegen.',
                     'title' => 'Bestelleinstellungen',
 
                     'order-number' => [
@@ -3539,6 +3528,12 @@ return [
                         'minimum-order-amount' => 'Mindestbestellmenge',
                         'title'                => 'Mindestbestellmengen-Einstellungen',
                         'title-info'           => 'Konfigurieren Sie die Mindestbestellmenge oder den Standardwert für die Verarbeitung oder den Vorteil des Kaufprozesses.',
+                    ],
+
+                    'stock-options' => [
+                        'allow-back-orders' => 'Rückbestellungen erlauben',
+                        'title'             => 'Bestandsoptionen',
+                        'title-info'        => 'Bestandsoptionen sind Anlageverträge, die das Recht gewähren, Unternehmensaktien zu einem festgelegten Preis zu kaufen oder zu verkaufen und potenzielle Gewinne beeinflussen.',
                     ],
                 ],
 
