@@ -22,6 +22,7 @@
 - [The `Webkul\Product\Repositories\ProductRepository` Repository](#the-product-repository)
 - [The `Webkul\Sales\Repositories\OrderItemRepository` Repository](#the-order-item-repository)
 - [Shop Event parameter updated](#event-parameter-updated)
+- [Admin Stock Options Configuration Updated](#admin-stock-options-configuration-updated)
 
 </div>
 
@@ -65,6 +66,23 @@ There is no dependency needed to be updated at for this upgrade.
 
 <div class="content-list" markdown="1">
 </div>
+
+
+
+<a name="admin"></a>
+### Admin
+
+<a name="admin-stock-options-configuration-updated"></a>
+####  In the file `packages/Webkul/Admin/src/Config/system.php` Admin Stock Options Configuration Updated
+
+**Impact Probability: Medium**
+
+1. Please note that with the latest upgrade, the configuration for Inventory Stock Options, previously found in the catalog section, has been relocated to Order Settings within the sales section.
+
+```diff
+- 'key'  => 'catalog.inventory',
++ 'key'  => 'sales.order_settings.stock_options',
+```
 
 
 
