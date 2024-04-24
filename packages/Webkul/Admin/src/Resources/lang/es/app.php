@@ -584,7 +584,7 @@ return [
                 'title'                  => 'Factura #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount Por Unidad x :qty Cantidad',
                 'create-invoice'     => 'Crear Factura',
                 'create-success'     => 'Factura creada exitosamente',
@@ -1138,7 +1138,7 @@ return [
                 'value-per-locale'       => 'Valor por Localización',
                 'yes'                    => 'Sí',
 
-                'option'                 => [
+                'option' => [
                     'color'     => 'Muestra de Color',
                     'dropdown'  => 'Desplegable',
                     'image'     => 'Muestra de Imagen',
@@ -1612,7 +1612,7 @@ return [
                 'status'      => 'Estado',
                 'title'       => 'Reseñas',
 
-                'edit'  => [
+                'edit' => [
                     'approved'       => 'Aprobado',
                     'customer'       => 'Cliente',
                     'date'           => 'Fecha',
@@ -1630,7 +1630,7 @@ return [
                     'update-success' => 'Actualización Exitosa',
                 ],
 
-                'datagrid'   => [
+                'datagrid' => [
                     'approved'               => 'Aprobado',
                     'comment'                => 'Comentario',
                     'customer-names'         => 'Nombre',
@@ -1723,7 +1723,7 @@ return [
                     ],
                 ],
 
-                'create'    => [
+                'create' => [
                     'active'          => 'Active',
                     'back-btn'        => 'Back',
                     'channel'         => 'Channel',
@@ -1745,7 +1745,7 @@ return [
                     'title'           => 'Create Campaign',
                 ],
 
-                'edit'    => [
+                'edit' => [
                     'active'          => 'Active',
                     'audience'        => 'Audience',
                     'back-btn'        => 'Back',
@@ -1787,7 +1787,7 @@ return [
                         'name'    => 'Name',
                     ],
 
-                    'create'   => [
+                    'create' => [
                         'date'           => 'Date',
                         'delete-warning' => 'Are you sure, you want to perform this action?',
                         'description'    => 'Description',
@@ -1824,7 +1824,7 @@ return [
                         'true'       => 'True',
                     ],
 
-                    'edit'  => [
+                    'edit' => [
                         'back-btn'      => 'Back',
                         'email'         => 'Email',
                         'false'         => 'False',
@@ -2332,9 +2332,9 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken'     => 'El :name ya ha sido tomado.',
-            'create-btn'        => 'Crear Página',
-            'title'             => 'Páginas',
+            'already-taken' => 'El :name ya ha sido tomado.',
+            'create-btn'    => 'Crear Página',
+            'title'         => 'Páginas',
 
             'datagrid' => [
                 'delete'              => 'Eliminar',
@@ -2386,7 +2386,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn' => 'Crear Idioma',
                 'locale'     => 'Idioma',
@@ -2428,7 +2428,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'Crear Moneda',
                 'currency'   => 'Moneda',
@@ -2463,7 +2463,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'              => 'Editar Moneda',
+                    'title' => 'Editar Moneda',
                 ],
 
                 'create-success'    => 'Moneda creada exitosamente.',
@@ -2474,9 +2474,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'Acción',
                     'allowed-errors'      => 'Errores Permitidos',
                     'back-btn'            => 'Volver',
@@ -2500,7 +2500,7 @@ return [
                     'validation-strategy' => 'Estrategia de Validación',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'Acción',
                     'allowed-errors'      => 'Errores Permitidos',
                     'back-btn'            => 'Volver',
@@ -2524,11 +2524,11 @@ return [
                     'validation-strategy' => 'Estrategia de Validación',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'Crear Importación',
                     'title'        => 'Importaciones',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => 'Acciones',
                         'completed-at'  => 'Completado en',
                         'created'       => 'Creado',
@@ -2545,7 +2545,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'Volver',
                     'completed-batches'       => 'Total de Lotes Completados:',
                     'download-error-report'   => 'Descargar Informe Completo',
@@ -2580,7 +2580,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'Crear Tipo de Cambio',
                 'exchange-rate' => 'Tipo de Cambio',
@@ -2699,7 +2699,7 @@ return [
             'update-success'    => 'Fuentes de Inventario actualizadas exitosamente',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => '¿Estás seguro de que deseas eliminar?',
@@ -2925,7 +2925,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'    => 'Editar Usuario',
+                    'title' => 'Editar Usuario',
                 ],
             ],
 
@@ -3092,7 +3092,7 @@ return [
                 'value'                         => 'Valor: :value',
                 'value-input'                   => 'Valor',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => 'Agregar servicios',
                     'channels'           => 'Canales',
                     'delete'             => 'Eliminar',
