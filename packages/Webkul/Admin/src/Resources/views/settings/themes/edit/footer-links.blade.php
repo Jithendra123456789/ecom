@@ -88,8 +88,8 @@
                                                         :href="link.url"
                                                         target="_blank"
                                                         class="text-blue-600 transition-all hover:underline"
-                                                        v-text="link.url"
                                                     >
+                                                        @{{ link.url }}
                                                     </a>
                                                 </div>
                                             </p>
@@ -98,10 +98,8 @@
                                                 <div> 
                                                     @lang('admin::app.settings.themes.edit.filter-title'):
 
-                                                    <span
-                                                        class="text-gray-600 transition-all dark:text-gray-300"
-                                                        v-text="link.title"
-                                                    >
+                                                    <span class="text-gray-600 transition-all dark:text-gray-300">
+                                                        @{{ link.title }}
                                                     </span>
                                                 </div>
                                             </p>
@@ -176,7 +174,11 @@
                         </x-slot>
                     
                         <x-slot:content>
-                            <input type="hidden" name="type" value="footer_links">
+                            <input
+                                type="hidden"
+                                name="type"
+                                value="footer_links"
+                            />
 
                             <x-admin::form.control-group>
                                 <x-admin::form.control-group.label class="required">

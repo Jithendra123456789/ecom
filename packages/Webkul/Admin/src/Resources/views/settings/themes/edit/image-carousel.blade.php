@@ -111,10 +111,8 @@
                                                         target="_blank"
                                                         class="text-blue-600 transition-all hover:underline ltr:ml-2 rtl:mr-2"
                                                     >
-                                                        <span 
-                                                            :ref="'imageName_' + index"
-                                                            v-text="image.image"
-                                                        ></span>
+                                                        <span :ref="'imageName_' + index">
+                                                            @{{ image.image }}
                                                     </a>
                                                 </span>
                                             </div>
