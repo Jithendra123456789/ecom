@@ -24,7 +24,17 @@ class InvoiceSequencer extends Sequencer
      */
     public function setAllConfigs()
     {
-        $this->prefix = core()->getConfigData('sales.invoice_settings.invoice_number.invoice_number_prefix');
+        $prefixConfig = core()->getConfigData('sales.invoice_settings.invoice_number.invoice_number_prefix');
+
+        if (strpos($prefixConfig, 'date(') !== false) {
+            preg_match('/date\(\'([^\']+)\'\)/', $prefixConfig, $matches);
+
+            if (isset($matches[1])) {
+                $this->prefix = date($matches[1]);
+            }
+        } else {
+            $this->prefix = $prefixConfig;
+        }
 
         $this->length = core()->getConfigData('sales.invoice_settings.invoice_number.invoice_number_length');
 
